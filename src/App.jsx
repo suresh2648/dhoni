@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact.jsx";
 import Not from "./Not.jsx";
+import Home2 from "./Home2.jsx";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <li>
             <Link to="/not">Not</Link>
           </li>
+          <li>
+            <Link to="/home2">Home2</Link>
+          </li>
         </ul>
       </nav>
 
@@ -30,6 +34,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/not" element={<Not />} />
+        <Route path="home2" element={<Home2 />} />
       </Routes>
     </Router>
   );
